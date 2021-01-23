@@ -750,7 +750,7 @@ body {
   transition: opacity 250ms var(--cubic);
 }
 
-.backdrop.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -769,12 +769,12 @@ body {
   padding: 40px;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
   opacity: 0;
 }
 
-.backdrop .btn {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -792,13 +792,13 @@ body {
   cursor: pointer;
 }
 
-.backdrop .btn:hover,
-.backdrop .btn:focus {
+.btn-close:hover,
+.btn-close:focus {
   fill: var(--accent-color);
 }
 
 /* form-modal */
-.form-modal .text {
+.form-modal__call {
   display: block;
   margin-bottom: 12px;
 
@@ -807,15 +807,19 @@ body {
   line-height: 1.15;
   color: var(--primari-title);
   text-align: center;
-}
-
-.form-modal .wrap {
-  display: flex;
-  flex-direction: column;
-  
   }
 
-.form-modal .text-lable {
+  .form-conteiner {
+    width: 100%;
+    margin-bottom: 10px;    
+  }
+
+.form-lable {
+  display: flex;
+  flex-direction: column;  
+  }
+
+.form-lable__text {
   display: inline-block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -823,7 +827,14 @@ body {
   letter-spacing: 0.01em;
 }
 
-.form-modal .input {
+.form-lable__wrap {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  }
+
+
+.form-lable__input {
   border: 1px solid var(--border-form);
   border-radius: 4px;
   height: 40px;
@@ -834,7 +845,7 @@ body {
   cursor: pointer;
 }
 
-.form-modal .textarea {
+.form-lable__textarea {
   resize: none;
   width: 100%;
   padding: 12px 16px;
@@ -844,22 +855,21 @@ body {
   cursor: pointer;  
   }
 
-.form-modal .textarea::placeholder {
+  .form-lable__textarea::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.01em;
 }
 
-
-.form-modal .link-modal {
-  color: var(--accent-color);
-}
-
-.form-modal .label-checkbox {
+.label-checkbox {
   display: block;
   position: relative;
   margin-bottom: 30px;
+}
+
+.form-modal .link-modal {
+  color: var(--accent-color);
 }
 
 .form-modal .icon-check {
@@ -941,18 +951,9 @@ body {
   outline: var(--accent-color);
 }
 
-.conteiner-form {
-  width: 100%;
-  margin-bottom: 10px;
-  
-}
 
- .form-modal .comments {
+
+ .form-conteiner--indent {
   margin-bottom: 20px;
    
 }
-.form-modal .box {
-  position: relative;
-  display: inline-flex;
-  width: 100%;
-  }
