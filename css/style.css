@@ -563,24 +563,34 @@ body {
 .social-networks__link--effects:hover,
 .social-networks__link--effects:focus {
   background-color: var(--accent-color);
-  fill: var(--second-title);
+  color: var(--second-title);
 }
 
 /* clients */
+.clients__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  
+  text-align: center;
+  color: var(--primari-title);
+  font-size: 36px;
+  font-weight: 700; 
+}
+
 .clients-list {
   display: flex;
   margin-left: -30px;
   height: 90px;
 }
 
-.item-client {
+.clients-list__item {
   display: flex;
   width: calc((100% - 150px) / 6);
   height: 100%;
   margin-left: 30px;
 }
 
-.item-client .link-company {
+.clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,26 +604,31 @@ body {
   transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.item-client .link-company:hover,
-.item-client .link-company:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
 /* Страница пoртфолио */
+/* header */
+.conteiner__header {
+  border-bottom: 1px solid var(--border-header);
+}
+
 /* кнопки */
-.portfolio .buttons {
+.butons-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   margin-left: -8px;
 }
 
-.filter {
-  display: block;
+.butons-list__item {
+  margin-left: 8px;
 }
 
-.button-portfolio {
+.butons-list__btn {
   display: block;
 
   font-family: Roboto, sans-serif;
@@ -636,12 +651,8 @@ body {
     background-color 250ms var(--cubic);
 }
 
-.button-list {
-  margin-left: 8px;
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus {
+.butons-list__btn:hover,
+.butons-list__btn:focus {
   background-color: var(--accent-color);
   color: var(--second-title);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -649,13 +660,6 @@ body {
 }
 
 /* работы портфолио */
-.portfolio {
-  box-sizing: border-box;
-}
-
-.header-portfolio {
-  border-bottom: 1px solid var(--border-header);
-}
 
 .list-portfolio {
   font-size: 16px;
