@@ -37,7 +37,6 @@ ul {
   padding: 0;
 }
 
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -232,6 +231,10 @@ body {
 .contacts-list__item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
+}
+
+.contacts-list__link {
+  display: block;
 }
 
 .networks-conteiner, 
@@ -521,22 +524,27 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--backgroung-white);
-  text-align: center;
-}
+  text-align: center;  
+ }
+
 
 .team-card__photo {
+  display: block;
   margin-bottom: 30px;
   width: 100%;
+}
+
+.team-card__function {
+  margin: 0 0 16px;
 }
 
 .team-card__name {
   font-weight: 500;
   line-height: 1.14;
-
-  color: var(--primari-title);
-
   margin-top: 0;
   margin-bottom: 10px;
+  
+  color: var(--primari-title); 
 }
 
 .social-networks--location {
@@ -875,10 +883,14 @@ body {
 
 .label-check__box {
   position: absolute;
+  display: inline-block;
   top: 50%;
   left: -23px;
   transform: translateY(-50%);
-  display: inline-block;
+
+  color: var(--primari-title);
+  fill: currentColor;
+    
   width: 16px;
   height: 15px;
   background-image: url(../images/icon-check.svg);
@@ -930,7 +942,7 @@ body {
   margin-left: 37px;
 }
 
-.label-check__box {
+.form-lable__icon {
   position: absolute;
   top: 50%;
 
@@ -941,8 +953,8 @@ body {
   transition: color 250ms var(--cubic);
 }
 
-.form-lable__input:focus-within + .form-lable__icon,
-.form-lable__input:not(:placeholder-shown) + .form-lable__icon {
+.form-lable__input:focus-within ~ .form-lable__icon,
+.form-lable__input:not(:placeholder-shown) ~ .form-lable__icon {
   color: var(--accent-color);
 }
 
