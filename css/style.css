@@ -810,13 +810,14 @@ body {
   }
 
   .form-conteiner {
-    width: 100%;
+    display: block;
     margin-bottom: 10px;    
   }
 
 .form-lable {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+  width: 100%; 
   }
 
 .form-lable__text {
@@ -862,17 +863,17 @@ body {
   letter-spacing: 0.01em;
 }
 
-.label-checkbox {
+.label-check {
   display: block;
   position: relative;
   margin-bottom: 30px;
 }
 
-.form-modal .link-modal {
+.label-check__link {
   color: var(--accent-color);
 }
 
-.form-modal .icon-check {
+.label-check__box {
   position: absolute;
   top: 50%;
   left: -23px;
@@ -891,12 +892,12 @@ body {
     border-color 250ms var(--cubic);
 }
 
-.form-modal .checkbox:checked ~ .icon-check {
+.label-check__input:checked ~ .label-check__box {
   border-color: transparent;
   background-color: var(--accent-color);
 }
 
-.form-modal .btn-submit {
+.btn-submit {
   display: block;
   color: var(--second-title);
   background-color: var(--accent-color);
@@ -925,11 +926,11 @@ body {
   letter-spacing: 0.01em;
   color: var(--textarea-placeholder);
 }
-.form-modal .label-checkbox {
+.label-check {
   margin-left: 37px;
 }
 
-.form-modal .icon {
+.label-check__box {
   position: absolute;
   top: 50%;
 
@@ -940,18 +941,16 @@ body {
   transition: color 250ms var(--cubic);
 }
 
-.form-modal .input:focus-within + .icon,
-.form-modal .input:not(:placeholder-shown) + .icon {
+.form-lable__input:focus-within + .form-lable__icon,
+.form-lable__input:not(:placeholder-shown) + .form-lable__icon {
   color: var(--accent-color);
 }
 
-.form-modal .input:focus,
-.form-modal .textarea:focus {
+.form-lable__input:focus,
+.form-lable__textarea:focus {
   border-color: var(--accent-color);
   outline: var(--accent-color);
 }
-
-
 
  .form-conteiner--indent {
   margin-bottom: 20px;
