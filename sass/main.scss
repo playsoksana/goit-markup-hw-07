@@ -1,0 +1,7 @@
+$color: green;
+body {
+  color: $color;
+  &-text {
+    color: tomato;
+  }
+}
