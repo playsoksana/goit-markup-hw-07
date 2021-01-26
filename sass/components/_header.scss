@@ -22,21 +22,6 @@
   letter-spacing: $average-letter-spacing;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: $bold;
-  font-size: $large;
-  line-height: $base-line-height;
-  letter-spacing: $base-letter-spacing;
-  margin-right: 93px;
-  .logo__text {
-    color: $accent-color;
-  }
-  .logo__text--dark {
-    color: $primari-title;
-  }
-}
-
 .site-nav {
   display: flex;
   .site-nav__item {
