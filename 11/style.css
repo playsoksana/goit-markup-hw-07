@@ -25,7 +25,7 @@ html {
 }
 
 /* Сброс стилей и основные стили*/
- a {
+a {
   text-decoration: none;
   color: inherit;
   font-style: normal;
@@ -95,7 +95,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  
+
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -115,7 +115,7 @@ body {
 }
 
 .logo__text--dark {
-  color: var(--primari-title);  
+  color: var(--primari-title);
 }
 
 .site-nav {
@@ -237,9 +237,9 @@ body {
   display: block;
 }
 
-.networks-conteiner, 
+.networks-conteiner,
 .mailing-form {
-  padding-top: 12px; 
+  padding-top: 12px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--second-title);
@@ -251,37 +251,34 @@ body {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
-   }
-   
-
-  .social-networks__item {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    }
-
-  .social-networks__item:not(:nth-last-child(1)) {
-    margin-right: 10px;
-  }
-  
-  
-  .social-networks__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 50%;
-    
-    background-color: var(--icon-color);
-    transition: background-color 250ms var(--cubic);
-  }
-
-.social-networks__icon {
-  fill:currentColor
 }
 
+.social-networks__item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+.social-networks__item:not(:nth-last-child(1)) {
+  margin-right: 10px;
+}
+
+.social-networks__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  background-color: var(--icon-color);
+  transition: background-color 250ms var(--cubic);
+}
+
+.social-networks__icon {
+  fill: currentColor;
+}
 
 .social-networks__link:hover,
 .social-networks__link:focus {
@@ -361,7 +358,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .hero-wrapper {
@@ -371,14 +367,14 @@ body {
 
 .hero__title {
   margin: 0 auto 30px;
-    
+
   color: var(--second-title);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
- }
+}
 
 .hero-btn {
   display: inline-block;
@@ -439,26 +435,25 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primari-title); 
+  color: var(--primari-title);
 }
 
 .advantages-list__text {
   margin-top: 0;
   margin-bottom: 0;
-  }
-
+}
 
 /* specialization */
 .sub-title {
   margin-top: 0;
   margin-bottom: 50px;
-  
+
   text-align: center;
   color: var(--primari-title);
   font-size: 36px;
-  font-weight: 700; 
+  font-weight: 700;
 }
-   
+
 .specialization-items {
   display: flex;
   justify-content: space-between;
@@ -515,7 +510,6 @@ body {
   justify-content: space-between;
 }
 
-
 .team-card {
   border: 0;
   width: calc((100% - 90px) / 4);
@@ -524,9 +518,8 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--backgroung-white);
-  text-align: center;  
- }
-
+  text-align: center;
+}
 
 .team-card__photo {
   display: block;
@@ -543,8 +536,8 @@ body {
   line-height: 1.14;
   margin-top: 0;
   margin-bottom: 10px;
-  
-  color: var(--primari-title); 
+
+  color: var(--primari-title);
 }
 
 .social-networks--location {
@@ -552,9 +545,9 @@ body {
   justify-content: space-between;
   padding: 0 32px;
   color: var(--icon-color-second);
-  }
+}
 
-.social-networks__link--effects {  
+.social-networks__link--effects {
   transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
@@ -815,18 +808,18 @@ body {
   line-height: 1.15;
   color: var(--primari-title);
   text-align: center;
-  }
+}
 
-  .form-conteiner {
-    display: block;
-    margin-bottom: 10px;    
-  }
+.form-conteiner {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .form-lable {
   display: flex;
-  flex-direction: column; 
-  width: 100%; 
-  }
+  flex-direction: column;
+  width: 100%;
+}
 
 .form-lable__text {
   display: inline-block;
@@ -840,8 +833,7 @@ body {
   position: relative;
   display: inline-flex;
   width: 100%;
-  }
-
+}
 
 .form-lable__input {
   border: 1px solid var(--border-form);
@@ -861,10 +853,10 @@ body {
   border: 1px solid var(--border-form);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
-  cursor: pointer;  
-  }
+  cursor: pointer;
+}
 
-  .form-lable__textarea::placeholder {
+.form-lable__textarea::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -890,7 +882,7 @@ body {
 
   color: var(--primari-title);
   fill: currentColor;
-    
+
   width: 16px;
   height: 15px;
   background-image: url(../images/icon-check.svg);
@@ -964,7 +956,6 @@ body {
   outline: var(--accent-color);
 }
 
- .form-conteiner--indent {
+.form-conteiner--indent {
   margin-bottom: 20px;
-   
 }

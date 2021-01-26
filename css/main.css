@@ -1,5 +1,7 @@
 body {
   color: green;
+  -webkit-text-decoration: blanchedalmond;
+          text-decoration: blanchedalmond;
 }
 
 body-text {
