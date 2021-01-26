@@ -1,0 +1,44 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: $xx-small;
+  font-weight: $regular;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+
+  color: $text-color;
+
+  margin: 0;
+  padding-top: 80px;
+}
+
+%center {
+  text-align: center;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%visvally-hiden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+%site-nav__link--current {
+  color: $accent-color;
+  &::after {
+    opacity: 1;
+  }
+}

@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-:root {
+/* :root {
   --primari-title: #212121;
   --second-title: #ffffff;
   --backgroung-white: #ffffff;
@@ -12,32 +12,21 @@ html {
   --text-color: #757575;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --dark-background: #2f303a;
-  --border-color-card: #eeeeee;
-  --border-header: #ececec;
+  --light-gray: #eeeeee;
+  --second-gray: #ececec;
   --icon-color-second: #afb1b8;
   --icon-color: rgba(255, 255, 255, 0.1);
-  --background-hero: #c4c4c4;
+  --color-hero: #c4c4c4;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --border-form: rgba(33, 33, 33, 0.2);
-  --footer-form: rgba(255, 255, 255, 0.3);
+  --color-border-form: rgba(33, 33, 33, 0.2);
+  --form-grey: rgba(255, 255, 255, 0.3);
   --placeholder-text: rgba(255, 255, 255, 0.6);
-  --textarea-placeholder: rgba(117, 117, 117, 0.5);
-}
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+} */
 
 /* Сброс стилей и основные стили*/
-a {
-  text-decoration: none;
-  color: inherit;
-  font-style: normal;
-}
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+/* body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -48,33 +37,33 @@ body {
 
   margin: 0;
   padding-top: 80px;
-}
+} */
 
-.center {
+/* .center {
   text-align: center;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.conteiner {
+/* .conteiner {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* Визуально скрытый элемент */
-.visvally-hiden {
+/* .visvally-hiden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: 0;
-}
+} */
 
 /* header */
 .header {
@@ -97,7 +86,7 @@ body {
   align-items: center;
 
   font-weight: 500;
-  line-height: 1.18;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -105,7 +94,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.6;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
@@ -285,7 +274,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* footer-form */
+/* form */
 .mailing-form__input {
   display: inline;
   box-sizing: border-box;
@@ -294,13 +283,13 @@ body {
   margin-right: 10px;
   padding: 15px 16px;
   border-radius: 4px;
-  border: 1px solid var(--footer-form);
+  border: 1px solid var(--form-grey);
 
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: left;
   background-color: var(--dark-background);
@@ -347,7 +336,7 @@ body {
   margin-right: auto;
   padding: 200px;
 
-  background-color: var(--background-hero);
+  background-color: var(--color-hero);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -386,7 +375,7 @@ body {
 
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.88;
+  line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -433,7 +422,7 @@ body {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.2;
   text-transform: uppercase;
   color: var(--primari-title);
 }
@@ -491,7 +480,7 @@ body {
   justify-content: center;
 
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.2;
   text-transform: uppercase;
   color: var(--second-title);
   background: rgba(47, 48, 58, 0.8);
@@ -500,7 +489,7 @@ body {
 /* team */
 .team {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.9;
 
   background-color: var(--second-background);
 }
@@ -533,7 +522,7 @@ body {
 
 .team-card__name {
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -594,7 +583,7 @@ body {
 /* Страница пoртфолио */
 /* header */
 .conteiner__header {
-  border-bottom: 1px solid var(--border-header);
+  border-bottom: 1px solid var(--second-gray);
 }
 
 /* кнопки */
@@ -616,7 +605,7 @@ body {
 
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.63;
+  line-height: 1.7;
 
   background-color: var(--second-background);
   color: var(--primari-title);
@@ -644,7 +633,7 @@ body {
 
 .portfolio-list {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.9;
 
   display: flex;
 
@@ -666,7 +655,7 @@ body {
 
   width: 100%;
   height: 100%;
-  border: 1px solid var(--border-color-card);
+  border: 1px solid var(--light-gray);
 
   text-decoration: none;
   color: inherit;
@@ -676,7 +665,7 @@ body {
 
 .portfolio-item__link:focus,
 .portfolio-item__link:hover {
-  border: 1px solid var(--border-color-card);
+  border: 1px solid var(--light-gray);
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -690,7 +679,7 @@ body {
   position: relative;
   width: 100%;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.7;
   color: var(--second-title);
   overflow: hidden;
 }
@@ -805,7 +794,7 @@ body {
 
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--primari-title);
   text-align: center;
 }
@@ -836,7 +825,7 @@ body {
 }
 
 .form-lable__input {
-  border: 1px solid var(--border-form);
+  border: 1px solid var(--color-border-form);
   border-radius: 4px;
   height: 40px;
   padding: 0;
@@ -850,7 +839,7 @@ body {
   resize: none;
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid var(--border-form);
+  border: 1px solid var(--color-border-form);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
   cursor: pointer;
@@ -859,7 +848,7 @@ body {
 .form-lable__textarea::placeholder {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: 0.01em;
 }
 
@@ -915,7 +904,7 @@ body {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.2;
   letter-spacing: 0.06em;
   text-align: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -926,9 +915,9 @@ body {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.2;
   letter-spacing: 0.01em;
-  color: var(--textarea-placeholder);
+  color: var(--placeholder-color);
 }
 .label-check {
   margin-left: 37px;
