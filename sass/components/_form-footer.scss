@@ -1,25 +1,23 @@
-.mailing-form {
-  .mailing-form__input {
-    display: inline;
-    box-sizing: border-box;
-    width: 356px;
-    height: 50px;
-    margin-right: 10px;
-    padding: 15px 16px;
-    border-radius: 4px;
-    border: 1px solid $form-grey;
+.mailing-form__input {
+  display: inline;
+  box-sizing: border-box;
+  width: 356px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid $form-color;
 
-    font-family: Roboto, sans-serif;
-    font-size: $x-small;
-    font-style: normal;
-    font-weight: $regular;
-    line-height: $min-line-height;
-    letter-spacing: $base-letter-spacing;
-    background-color: $dark-background;
-    &:placeholder-shown,
-    &:not(:placeholder-shown) {
-      color: $placeholder-text;
-    }
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  background-color: $dark-background;
+  &:placeholder-shown,
+  &:not(:placeholder-shown) {
+    color: var(--placeholder-text);
   }
 }
 
@@ -32,15 +30,15 @@
   border-radius: 4px;
   cursor: pointer;
 
-  font-family: Roboto;
-  font-size: $x-small;
-  font-weight: $bold;
-  line-height: $max-line-height;
-  letter-spacing: $max-letter-spacing;
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 
   background-color: $accent-color;
   color: $second-title;
-  .mailing-btn__icon {
+  &__icon {
     margin-left: 10px;
   }
 }

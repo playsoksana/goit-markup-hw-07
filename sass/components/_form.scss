@@ -1,14 +1,12 @@
-.form-modal {
-  .form-modal__call {
-    display: block;
-    margin-bottom: 12px;
+.form-modal__call {
+  display: block;
+  margin-bottom: 12px;
 
-    font-size: $medium;
-    font-weight: $bold;
-    line-height: $min-line-height;
-    color: $primari-title;
-    text-align: center;
-  }
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-title;
+  text-align: center;
 }
 
 .form-conteiner {
@@ -20,69 +18,48 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  .form-lable__text {
+
+  &__text {
     display: inline-block;
     margin-bottom: 4px;
-    font-size: $xxx-small;
-    line-height: $min-line-height;
-    letter-spacing: $min-letter-spacing;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
   }
-  .form-lable__wrap {
+
+  &__wrap {
     position: relative;
     display: inline-flex;
     width: 100%;
-    .form-lable__input {
-      border: 1px solid $color-border-form;
-      border-radius: 4px;
-      height: 40px;
-      padding: 0;
-      width: 100%;
-      padding: 12px 12px 12px 42px;
-      transition: border-color 250ms $cubic, outline-color 250ms $cubic;
-      cursor: pointer;
+  }
+
+  &__input {
+    border: 1px solid $color-border-form;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+    cursor: pointer;
+  }
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid $color-border-form;
+    border-radius: 4px;
+    transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
     }
   }
-}
-
-.form-lable__icon {
-  position: absolute;
-  top: 50%;
-
-  left: 21px;
-  transform: translate(-50%, -50%);
-  color: $primari-title;
-  fill: currentColor;
-  transition: color 250ms $cubic;
-  .form-lable__input:focus-within ~ &,
-  .form-lable__input:not(:placeholder-shown) ~ & {
-    color: $accent-color;
-  }
-}
-
-.form-conteiner--indent {
-  margin-bottom: 20px;
-}
-
-.form-lable__textarea {
-  resize: none;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid $color-border-form;
-  border-radius: 4px;
-  transition: border-color 250ms $cubic, outline-color 250ms $cubic;
-  cursor: pointer;
-  &::placeholder {
-    font-size: $xx-small;
-    font-weight: $regular;
-    line-height: $base-line-height;
-    letter-spacing: $min-letter-spacing;
-  }
-}
-
-.form-lable__input:focus,
-.form-lable__textarea:focus {
-  border-color: $accent-color;
-  outline: $accent-color;
 }
 
 .label-check {
@@ -91,17 +68,18 @@
   margin-bottom: 30px;
   margin-left: 37px;
 
-  .label-checkbox__link {
+  &__link {
     color: $accent-color;
   }
-  .label-check__box {
+
+  &__box {
     position: absolute;
     display: inline-block;
     top: 50%;
     left: -23px;
     transform: translateY(-50%);
 
-    color: $primari-title;
+    color: $primary-title;
     fill: currentColor;
 
     width: 16px;
@@ -111,9 +89,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: border-box;
-    border: 2px solid $primari-title;
+    border: 2px solid $primary-title;
     border-radius: 4px;
     transition: background-color 250ms $cubic, border-color 250ms $cubic;
+
     .label-check__input:checked ~ & {
       border-color: transparent;
       background-color: $accent-color;
@@ -132,21 +111,47 @@
   margin-right: auto;
   cursor: pointer;
 
-  font-family: Roboto, sans-serif;
-  font-size: $x-small;
-  font-weight: $bold;
-  line-height: $min-line-height;
-  letter-spacing: $max-letter-spacing;
+  font-family: $primary-font-family;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
   text-align: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .form-modal textarea::placeholder {
-  font-family: Roboto, sans-serif;
-  font-size: $xxx-small;
-  font-weight: $regular;
-  line-height: $min-line-height;
-  letter-spacing: $min-letter-spacing;
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
   color: $placeholder-color;
+}
+
+.form-lable__icon {
+  position: absolute;
+  top: 50%;
+
+  left: 21px;
+  transform: translate(-50%, -50%);
+  color: $primary-title;
+  fill: currentColor;
+  transition: color 250ms $cubic;
+
+  .form-lable__input:focus-within ~ &,
+  .form-lable__input:not(:placeholder-shown) ~ & {
+    color: $accent-color;
+  }
+}
+
+.form-lable__input:focus,
+.form-lable__textarea:focus {
+  border-color: $accent-color;
+  outline: $accent-color;
+}
+
+.form-conteiner--indent {
+  margin-bottom: 20px;
 }

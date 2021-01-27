@@ -1,41 +1,39 @@
-.specialization {
-  .specialization-items {
-    display: flex;
-    justify-content: space-between;
-  }
+.specialization-items {
+  display: flex;
+  justify-content: space-between;
 }
 
 .specialization-type {
   width: calc((100% - 60px) / 3);
-  .specialization-type__link {
+  &__link {
     position: relative;
 
     display: block;
     width: 100%;
     height: 100%;
     padding-bottom: 0;
-    .specialization-type__photo {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .specialization-type__title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+  }
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-      display: flex;
-      width: 100%;
-      height: 70px;
-      margin: 0;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 
-      font-weight: $bold;
-      line-height: $min-line-height;
-      text-transform: uppercase;
-      color: $second-title;
-      background: $overlay-title-black;
-    }
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $second-title;
+    background: rgba(47, 48, 58, 0.8);
   }
 }

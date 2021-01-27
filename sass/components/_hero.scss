@@ -1,6 +1,7 @@
 .hero {
   text-align: center;
 }
+
 .hero-overlay {
   max-width: 1600px;
   height: 600px;
@@ -23,16 +24,15 @@
 
 .hero-wrapper {
   width: 696px;
-  margin: 0 auto;
-
-  .hero__title {
-    margin: 0 auto 30px;
+  margin: 0 auto 30px;
+  &__title {
+    margin: 0 auto;
 
     color: $second-title;
-    font-weight: $black;
-    font-size: $xx-large;
-    line-height: $average--line-height;
-    letter-spacing: $max-letter-spacing;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 }
@@ -46,10 +46,10 @@
   cursor: pointer;
 
   font-size: 16px;
-  font-weight: $bold;
-  line-height: $max-line-height;
+  font-weight: 700;
+  line-height: 1.9;
   text-align: center;
-  letter-spacing: $max-letter-spacing;
+  letter-spacing: 0.06em;
 
   color: $second-title;
   background-color: $accent-color;

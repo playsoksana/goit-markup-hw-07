@@ -1,7 +1,7 @@
 .footer {
   background-color: $dark-background;
   padding: 60px 0;
-  .footer__conteiner {
+  &__conteiner {
     display: flex;
     justify-content: space-between;
   }
@@ -10,7 +10,7 @@
 .address {
   display: block;
   width: 231px;
-  .address__text {
+  &__text {
     display: flex;
     margin-top: 0;
     font-style: normal;
@@ -20,28 +20,11 @@
 }
 
 .contacts-list {
-  .contacts-list__item {
-    &:not(:last-child) {
-      display: block;
-      margin-bottom: 9px;
-    }
-    .contacts-list__link {
-      display: block;
-    }
-  }
-}
-
-.networks-conteiner,
-.mailing-form {
-  padding-top: 12px;
-  font-weight: $bold;
-  line-height: $min-line-height;
-  color: $second-title;
-  text-transform: uppercase;
-  .networks-conteiner__title,
-  .mailing-form__title {
+  &__item:not(:last-child) {
     display: block;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+  }
+  &__link {
+    display: block;
   }
 }

@@ -26,13 +26,12 @@
   transition: scale 250ms $cubic, opacity 250ms $cubic;
 
   width: 528px;
-  background-color: $backgroung-white;
+  background-color: $backgroung-main;
   padding: 40px;
-}
-
-.backdrop.backdrop--hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-  opacity: 0;
+  .backdrop.backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
 }
 
 .btn-close {
@@ -47,15 +46,13 @@
   height: 30px;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--backgroung-white);
+  background-color: $backgroung-main;
   border-radius: 50%;
   margin-left: auto;
   cursor: pointer;
+
   &:hover,
   &:focus {
-    color: $accent-color;
-  }
-  .btn-close__icon {
-    fill: currentColor;
+    fill: $accent-color;
   }
 }
