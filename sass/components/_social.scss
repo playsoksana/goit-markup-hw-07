@@ -19,11 +19,11 @@
 
   background-color: $icon-color;
   transition: background-color 250ms $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
   .social-networks__icon {
     fill: currentColor;
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-    }
   }
 }

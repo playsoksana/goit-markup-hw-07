@@ -2,7 +2,6 @@
   background-color: $dark-background;
   padding: 60px 0;
   .footer__conteiner {
-    @extend %conteiner;
     display: flex;
     justify-content: space-between;
   }

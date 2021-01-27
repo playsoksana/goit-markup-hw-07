@@ -1,0 +1,152 @@
+.form-modal {
+  .form-modal__call {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: $medium;
+    font-weight: $bold;
+    line-height: $min-line-height;
+    color: $primari-title;
+    text-align: center;
+  }
+}
+
+.form-conteiner {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-lable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .form-lable__text {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: $xxx-small;
+    line-height: $min-line-height;
+    letter-spacing: $min-letter-spacing;
+  }
+  .form-lable__wrap {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    .form-lable__input {
+      border: 1px solid $color-border-form;
+      border-radius: 4px;
+      height: 40px;
+      padding: 0;
+      width: 100%;
+      padding: 12px 12px 12px 42px;
+      transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-lable__icon {
+  position: absolute;
+  top: 50%;
+
+  left: 21px;
+  transform: translate(-50%, -50%);
+  color: $primari-title;
+  fill: currentColor;
+  transition: color 250ms $cubic;
+  .form-lable__input:focus-within ~ &,
+  .form-lable__input:not(:placeholder-shown) ~ & {
+    color: $accent-color;
+  }
+}
+
+.form-conteiner--indent {
+  margin-bottom: 20px;
+}
+
+.form-lable__textarea {
+  resize: none;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid $color-border-form;
+  border-radius: 4px;
+  transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+  cursor: pointer;
+  &::placeholder {
+    font-size: $xx-small;
+    font-weight: $regular;
+    line-height: $base-line-height;
+    letter-spacing: $min-letter-spacing;
+  }
+}
+
+.form-lable__input:focus,
+.form-lable__textarea:focus {
+  border-color: $accent-color;
+  outline: $accent-color;
+}
+
+.label-check {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 37px;
+
+  .label-checkbox__link {
+    color: $accent-color;
+  }
+  .label-check__box {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: -23px;
+    transform: translateY(-50%);
+
+    color: $primari-title;
+    fill: currentColor;
+
+    width: 16px;
+    height: 15px;
+    background-image: url(//images/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    border: 2px solid $primari-title;
+    border-radius: 4px;
+    transition: background-color 250ms $cubic, border-color 250ms $cubic;
+    .label-check__input:checked ~ & {
+      border-color: transparent;
+      background-color: $accent-color;
+    }
+  }
+}
+
+.btn-submit {
+  display: block;
+  color: $second-title;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+
+  font-family: Roboto, sans-serif;
+  font-size: $x-small;
+  font-weight: $bold;
+  line-height: $min-line-height;
+  letter-spacing: $max-letter-spacing;
+  text-align: center;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.form-modal textarea::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: $xxx-small;
+  font-weight: $regular;
+  line-height: $min-line-height;
+  letter-spacing: $min-letter-spacing;
+  color: $placeholder-color;
+}

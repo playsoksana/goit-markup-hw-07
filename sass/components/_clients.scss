@@ -1,0 +1,34 @@
+.clients-list {
+  display: flex;
+  margin-left: -30px;
+  height: 90px;
+
+  .clients-list__item {
+    display: flex;
+    width: calc((100% - 150px) / 6);
+    height: 100%;
+    margin-left: 30px;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: $icon-color-second;
+  border: 1px solid $icon-color-second;
+  border-radius: 4px;
+
+  transition: color 250ms $cubic, border 250ms $cubic;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+  .clients-list__icon {
+    fill: currentColor;
+  }
+}

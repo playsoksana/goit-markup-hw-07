@@ -1,5 +1,5 @@
 .hero {
-  @extend %center;
+  text-align: center;
 }
 .hero-overlay {
   max-width: 1600px;
@@ -48,7 +48,7 @@
   font-size: 16px;
   font-weight: $bold;
   line-height: $max-line-height;
-  @extend %center;
+  text-align: center;
   letter-spacing: $max-letter-spacing;
 
   color: $second-title;
