@@ -51,7 +51,9 @@
 }
 
 .social-networks__link--effects {
-  transition: fill 250ms $cubic, background-color 250ms $cubic;
+  
+  @include transition(background-color fill);
+  
   &:hover,
   &:focus {
     background-color: $accent-color;
