@@ -1,44 +1,60 @@
-/* roboto-regular - latin_cyrillic-ext_cyrillic */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+/* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot");
+  src: url("../fonts/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.svg#Roboto") format("svg");
+  src: local(""), url("../fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff"), url("../fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
-/* roboto-500 - latin_cyrillic-ext_cyrillic */
+/* roboto-500 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot");
+  src: url("../fonts/roboto-v20-latin-500.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.svg#Roboto") format("svg");
+  src: local(""), url("../fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin-500.woff") format("woff"), url("../fonts/roboto-v20-latin-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin-500.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
-/* roboto-700 - latin_cyrillic-ext_cyrillic */
+/* roboto-700 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot");
+  src: url("../fonts/roboto-v20-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.svg#Roboto") format("svg");
+  src: local(""), url("../fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin-700.woff") format("woff"), url("../fonts/roboto-v20-latin-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
-/* roboto-900 - latin_cyrillic-ext_cyrillic */
+/* roboto-900 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot");
+  src: url("../fonts/roboto-v20-latin-900.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.svg#Roboto") format("svg");
+  src: local(""), url("../fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin-900.woff") format("woff"), url("../fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -62,22 +78,6 @@
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/raleway-v18-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin-700.woff") format("woff"), url("../fonts/raleway-v18-latin-700.ttf") format("truetype"), url("../fonts/raleway-v18-latin-700.svg#Raleway") format("svg");
   /* Legacy iOS */
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-style: normal;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  padding: 0;
 }
 
 html {
@@ -107,6 +107,8 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -714,6 +716,16 @@ body {
   opacity: 0;
 }
 
+.modal__call {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212121;
+  text-align: center;
+}
+
 .btn-close {
   position: absolute;
   top: 8px;
@@ -739,16 +751,6 @@ body {
 
 .btn-close:hover, .btn-close:focus {
   fill: #2196f3;
-}
-
-.form-modal__call {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #212121;
-  text-align: center;
 }
 
 .form-conteiner {
@@ -843,6 +845,7 @@ body {
 
 .label-check__link {
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .label-check__box {
@@ -852,11 +855,10 @@ body {
   left: -23px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #212121;
-  fill: currentColor;
   width: 16px;
   height: 15px;
   background-image: url(//images/icon-check.svg);
+  color: #212121;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1040,6 +1042,7 @@ body {
 }
 
 .portfolio-item__title {
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
