@@ -8,7 +8,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms $cubic;
+  @include transition(opacity);
+  
 }
 
 .backdrop--hidden {
@@ -24,6 +25,8 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: scale 250ms $cubic, opacity 250ms $cubic;
+  
+  
 
   width: 528px;
   background-color: $backgroung-main;
@@ -46,13 +49,11 @@
 }
 
 .btn-close {
+  @extend %flex-center;
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  
   width: 30px;
   height: 30px;
   padding: 0;

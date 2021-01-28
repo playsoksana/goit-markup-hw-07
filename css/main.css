@@ -80,6 +80,18 @@ li {
   /* Legacy iOS */
 }
 
+.social-networks__link, .advantages-list__wrap, .specialization-type__title, .clients-list__link, .btn-close, .butons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -341,15 +353,6 @@ body {
 }
 
 .social-networks__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -380,8 +383,8 @@ body {
 }
 
 .social-networks__link--effects {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks__link--effects:hover, .social-networks__link--effects:focus {
@@ -447,12 +450,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 200px;
-  background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(//images/overlay.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(//images/overlay.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(14, 23, 121, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/overlay.jpg);
+  background-image: linear-gradient(to right, rgba(14, 23, 121, 0.4), rgba(47, 48, 58, 0.4)), url(/images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #c4c4c4;
 }
 
 .hero-wrapper {
@@ -506,15 +509,6 @@ body {
 }
 
 .advantages-list__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #f5f4fa;
   width: 100%;
   height: 120px;
@@ -573,18 +567,9 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 70px;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -654,15 +639,6 @@ body {
 }
 
 .clients-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -730,15 +706,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -857,7 +824,7 @@ body {
           transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  background-image: url(//images/icon-check.svg);
+  background-image: url(/images/icon-check.svg);
   color: #212121;
   background-position: center;
   background-repeat: no-repeat;
@@ -958,12 +925,6 @@ body {
 }
 
 .butons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
   margin-left: -8px;
 }

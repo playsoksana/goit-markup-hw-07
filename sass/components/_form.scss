@@ -71,7 +71,7 @@
 
     width: 16px;
     height: 15px;
-    background-image: url(//images/icon-check.svg);
+    background-image: url(/images/icon-check.svg);
     color: $primary-title;
 
     background-position: center;
@@ -81,7 +81,7 @@
     border: 2px solid $primary-title;
     border-radius: 4px;
     transition: background-color 250ms $cubic, border-color 250ms $cubic;
-
+    
     .label-check__input:checked ~ & {
       border-color: transparent;
       background-color: $accent-color;
@@ -128,7 +128,7 @@
   transform: translate(-50%, -50%);
   color: $primary-title;
   fill: currentColor;
-  transition: color 250ms $cubic;
+  @include transition(color);
 
   .form-lable__input:focus-within ~ &,
   .form-lable__input:not(:placeholder-shown) ~ & {
