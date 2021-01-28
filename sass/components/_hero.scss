@@ -15,8 +15,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(//images/overlay.jpg);
-
+    url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,7 +26,6 @@
   margin: 0 auto 30px;
   &__title {
     margin: 0 auto;
-
     color: $second-title;
     font-weight: 900;
     font-size: 44px;

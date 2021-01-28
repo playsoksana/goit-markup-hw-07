@@ -4,17 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -63,7 +52,9 @@
       <section class="hero">
         <div class="hero-overlay">
           <div class="hero-wrapper">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero-wrapper__title">
+              Эффективные решения для вашего бизнеса
+            </h1>
           </div>
           <button type="button" class="hero-btn" data-open-modal>
             Заказать услугу
@@ -220,9 +211,11 @@
                   <li class="social-networks__item">
                     <a
                       class="social-networks__link social-networks__link--effects"
-                      href="">
+                      href=""
+                    >
                       <svg class="social-networks__icon" width="20" height="20">
-                        <use href="./images/icon.svg#icon-instagram"></use></svg></a>
+                        <use href="./images/icon.svg#icon-instagram"></use></svg
+                    ></a>
                   </li>
                   <li class="social-networks__item">
                     <a
@@ -550,9 +543,7 @@
               type="checkbox"
             /><span
               >Соглашаюсь с рассылкой и принимаю
-              <a class="label-checkbox__link" href="#"
-                >Условия договора</a
-              ></span
+              <a class="label-check__link" href="#">Условия договора</a></span
             >
             <span class="label-check__box"></span>
           </label>

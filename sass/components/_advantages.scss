@@ -13,9 +13,7 @@
   }
 
   &__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
 
     background-color: $second-background;
     width: 100%;
@@ -39,7 +37,7 @@
     text-transform: uppercase;
     color: $primary-title;
   }
-  
+
   &__text {
     margin-top: 0;
     margin-bottom: 0;
