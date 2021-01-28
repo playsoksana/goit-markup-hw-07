@@ -7,7 +7,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px;
+  padding: 200px 0;
 
   background-image: linear-gradient(
       to right,
@@ -24,6 +24,7 @@
   width: 696px;
   margin: 0 auto 30px;
   &__title {
+    width: 100%;
     margin: 0 auto;
 
     color: $second-title;
