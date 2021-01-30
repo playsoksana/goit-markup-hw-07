@@ -25,8 +25,7 @@
     margin-bottom: 0;
 
     cursor: pointer;
-    transition: box-shadow 250ms $cubic, color 250ms $cubic,
-      background-color 250ms $cubic;
+    @include transition(box-shadow, color, background-color);
 
     &:hover,
     &:focus {

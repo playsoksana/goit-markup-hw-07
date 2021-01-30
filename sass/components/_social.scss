@@ -32,7 +32,7 @@
 
   background-color: $icon-color;
   @include transition(background-color);
-  
+
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -51,7 +51,8 @@
 }
 
 .social-networks__link--effects {
-  transition: fill 250ms $cubic, background-color 250ms $cubic;
+  @include transition(color, background-color);
+
   &:hover,
   &:focus {
     background-color: $accent-color;

@@ -23,7 +23,7 @@
 
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  transition: scale 250ms $cubic, opacity 250ms $cubic;
+  @include transition(scale, opacity);
 
   width: 528px;
   background-color: $backgroung-main;
@@ -47,10 +47,12 @@
   background-color: $backgroung-main;
   border-radius: 50%;
   margin-left: auto;
+  fill: currentColor;
   cursor: pointer;
+  @include transition(color);
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    color: $accent-color;
   }
 }

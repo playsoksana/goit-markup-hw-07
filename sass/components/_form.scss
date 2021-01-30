@@ -40,7 +40,8 @@
     padding: 0;
     width: 100%;
     padding: 12px 12px 12px 42px;
-    transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+    @include transition(border-color, outline-color);
+
     cursor: pointer;
   }
 
@@ -50,7 +51,7 @@
     padding: 12px 16px;
     border: 1px solid $color-border-form;
     border-radius: 4px;
-    transition: border-color 250ms $cubic, outline-color 250ms $cubic;
+    @include transition(border-color, outline-color);
     cursor: pointer;
 
     &::placeholder {
@@ -92,7 +93,7 @@
     background-origin: border-box;
     border: 2px solid $primary-title;
     border-radius: 4px;
-    transition: background-color 250ms $cubic, border-color 250ms $cubic;
+    @include transition(background-color, border-color);
 
     .label-check__input:checked ~ & {
       border-color: transparent;
